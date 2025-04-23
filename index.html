@@ -7,13 +7,13 @@
   <link rel="icon" href="favicon.ico">
 
   <style>
-    h2 {
-      color: navy;
-      text-align: center;
-      margin-top: 20px;
+    body {
+      background-color: #f7f7f7;
     }
   </style>
 
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -104,47 +104,65 @@
       <form>
         <fieldset>
           <legend>Team Member Info</legend>
-
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name"><br><br>
-
-          <label for="date">Date:</label>
-          <input type="date" id="date" name="date"><br><br>
-
-          <p>Your Role:</p>
-          <input type="radio" id="dev" name="role" value="Developer">
-          <label for="dev">Developer</label>
-
-          <input type="radio" id="tl" name="role" value="TeamLead">
-          <label for="tl">TeamLead</label><br><br>
-
-          <p>Tools you used this week:</p>
-          <input type="checkbox" id="vscode" name="tool" value="VSCode">
-          <label for="vscode">VSCode</label>
-
-          <input type="checkbox" id="git" name="tool" value="Git">
-          <label for="git">Git</label><br><br>
-
-          <label for="fav-lang">Favorite Language:</label>
-          <input list="languages" id="fav-lang" name="fav-lang">
-          <datalist id="languages">
-            <option value="Python">
-            <option value="JavaScript">
-            <option value="C++">
-          </datalist><br><br>
-
-          <label for="feedback">Any Feedback?</label><br>
-          <textarea id="feedback" name="feedback" rows="4" cols="40"></textarea><br><br>
-
-          <label for="team">Choose your team:</label>
-          <select id="team" name="team">
-            <option value="alpha">A</option>
-            <option value="beta">B</option>
-            <option value="gamma">C</option>
-          </select><br><br>
-
-          <button type="submit">Submit</button>
-        </fieldset>
+        
+          <div class="form-row">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+          </div>
+        
+          <div class="form-row">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+          </div>
+        
+          <div class="form-row full">
+            <label>Your Role:</label>
+            <div class="form-options">
+              <input type="radio" id="dev" name="role" value="Developer">
+              <label for="dev">Developer</label>
+              <input type="radio" id="tl" name="role" value="TeamLead">
+              <label for="tl">TeamLead</label>
+            </div>
+          </div>
+        
+          <div class="form-row full">
+            <label>Tools you used this week:</label>
+            <div class="form-options">
+              <input type="checkbox" id="vscode" name="tool" value="VSCode">
+              <label for="vscode">VSCode</label>
+              <input type="checkbox" id="git" name="tool" value="Git">
+              <label for="git">Git</label>
+            </div>
+          </div>
+        
+          <div class="form-row">
+            <label for="fav-lang">Favorite Language:</label>
+            <input list="languages" id="fav-lang" name="fav-lang">
+            <datalist id="languages">
+              <option value="Python">
+              <option value="JavaScript">
+              <option value="C++">
+            </datalist>
+          </div>
+        
+          <div class="form-row full">
+            <label for="feedback">Any Feedback?</label>
+            <textarea id="feedback" name="feedback" rows="4"></textarea>
+          </div>
+        
+          <div class="form-row">
+            <label for="team">Choose your team:</label>
+            <select id="team" name="team">
+              <option value="alpha">A</option>
+              <option value="beta">B</option>
+              <option value="gamma">C</option>
+            </select>
+          </div>
+        
+          <div class="form-row full">
+            <button type="submit">Submit</button>
+          </div>
+        </fieldset>        
       </form>
     </section>
   </main>
