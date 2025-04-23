@@ -60,7 +60,7 @@ ul li, ol li {
 /*  SECTION HEADERS  */
 section h2 {
   font-size: 1.3rem;
-  color: color-mix(in srgb, orange 70%, blue 30%);
+  color: orange;
   text-align: left;
   margin-top: 1.5rem;
   border-bottom: 1px solid #ddd;
